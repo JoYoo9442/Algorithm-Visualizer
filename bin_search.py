@@ -59,6 +59,9 @@ ax.set_title(f"Target:{target}")
 plt.bar(data, data, color = colors, edgecolor = colors)
 
 ani = FuncAnimation(fig, update, frames=7, interval=1000)
-ani.save("bin_search.gif", writer='Pillow', fps=60)
+
+plt.show()
+
+ani.save("bin_search.gif", fps=60)
 
 # plt.show()
